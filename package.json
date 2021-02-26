@@ -1,0 +1,24 @@
+{
+  "name": "ts-webpack-example",
+  "scripts": {
+    "build-prod": "cross-env TS_NODE_PROJECT=\\\"tsconfig-for-webpack-config.json\\\" node_modules/.bin/webpack --config ./webpack.production.ts",
+    "start": "cross-env TS_NODE_PROJECT=\\\"tsconfig-for-webpack-config.json\\\" node_modules/.bin/webpack serve --config ./webpack.dev.ts",
+    "prettier": "prettier --write .",
+    "type-check": "tsc --noEmit --watch"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/webpack-dev-server": "^3.11.1",
+    "awesome-typescript-loader": "latest",
+    "cross-env": "^7.0.3",
+    "javascript-obfuscator": "^2.10.3",
+    "prettier": "latest",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest",
+    "webpack-obfuscator": "^3.2.0"
+  }
+}
